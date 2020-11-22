@@ -381,6 +381,21 @@ header.masthead .intro-text .intro-heading {
   background-color: #212529;
 }
 
+.portfolio-modal .brasilteca-imgContainer, .portfolio-modal .brasilteca-imgContainer img{
+  width: 100%;
+  margin: 0;
+}
+
+.portfolio-modal .brasilteca-imgFooter{
+  margin-bottom: 10px;
+  font-size: 0.75rem;
+}
+
+.portfolio-modal .brasilteca-description{
+  margin: 30px auto;
+  text-align: justify;
+}
+
 .timeline {
   position: relative;
   padding: 0;
