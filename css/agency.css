@@ -236,10 +236,27 @@ header .hero-title{
     margin: -150px auto 50px;
     font-size: 1.5rem;
   }
+
+  .service-info{
+    display: grid;
+    grid-template-rows: 130px 130px 300px;
+    justify-items: center;
+  }
+  .service-info h4{
+    align-self: center;
+  }
 }
-@media (min-width: 1024px){
+@media (min-width: 1080px){
   header .hero-title{
     margin: -120px auto 50px;
+  }
+  .service-info{
+    grid-template-rows: 130px 100px 200px;
+  }
+}
+@media (min-width: 1200px){
+  .service-info{
+    grid-template-rows: 130px 100px 150px;
   }
 }
 
