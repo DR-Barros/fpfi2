@@ -342,6 +342,14 @@ header .hero-title{
   text-align: center;
 }
 
+.modal-body_img{
+  margin: 0;
+  width: 100%;
+}
+.modal-info{
+  text-align: justify;
+}
+
 @media (min-width: 767px) {
   #portfolio .portfolio-item {
     margin: 0 0 30px;
