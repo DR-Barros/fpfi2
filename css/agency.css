@@ -371,6 +371,18 @@ header .hero-title{
   margin-bottom: 15px;
 }
 
+@media (max-width: 579px){
+  .portfolio-modal .modal-content h2{
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 400px){
+  .portfolio-modal .modal-content h2{
+    font-size: 1.5em;
+  }
+}
+
 .portfolio-modal .modal-content p {
   margin-bottom: 30px;
   text-align: justify;
