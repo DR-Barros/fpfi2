@@ -341,6 +341,9 @@ header .hero-title{
 #portafolio .modal-content .item-intro{
   text-align: center;
 }
+.modal-body ol{
+  text-align: justify;
+}
 
 .modal-body_img{
   margin: 0;
@@ -350,6 +353,30 @@ header .hero-title{
   text-align: justify;
 }
 
+@media (min-width: 1400px) {
+  .container{
+    max-width: 1360px;
+  }
+  .col-lg-8{
+    flex: 0 0 90%;
+    max-width: 90%;
+  }
+  .first-img{
+    max-width: 750px; margin: 15px auto;
+  }
+  .modal-text_style{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .modal-text_style p{
+    margin-right: 5px;
+  }
+}
+@media (min-width: 1920px) {
+  .container{
+    max-width: 1850px;
+  }
+}
 @media (min-width: 767px) {
   #portfolio .portfolio-item {
     margin: 0 0 30px;
