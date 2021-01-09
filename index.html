@@ -664,6 +664,17 @@
                     <img class="modal-body_img" src="img/portfolio/áQh/grafico4.jpg" alt="">
                   </div>
                   <img class="modal-body_img" src="img/portfolio/áQh/Imagen2.jpg" alt="">
+                  <div class="carrusel" id="carrusel">
+                    <img src="img/portfolio/áQh/anterior.png" alt="" class="carrusel-ant" onclick="CarruselJs(-1)">
+                    <div class="carrusel-con">
+                      <img src="img/portfolio/áQh/carrusel1.jpg" alt="" style="margin-bottom: 0;" id="carrusel-img">
+                      <p id="carrusel-text">
+                        Araucaria / Fundación Malalcahuello <br>
+                        Malalcahuello, Región de la Araucanía.
+                      </p>
+                    </div>
+                    <img src="img/portfolio/áQh/siguiente.png" alt="" class="carrusel-sig" onclick="CarruselJs(1)">
+                  </div>
                   <ul class="list-inline">
                     <li>
                       Link: 
@@ -704,7 +715,7 @@
                   <p>
                     Para mejorar la eficiencia del riego y la producción, lo primero que proponemos es caracterizar el huerto desarrollando los siguientes pasos:
                   </p>
-                  <ul>
+                  <ul class="modal-info">
                     <li>
                       Recopilación de información existente de suelo y unidades de producción
                     </li>
@@ -718,7 +729,7 @@
                   <p>
                     Las etapas mencionadas son la base del sistema de información para luego implementar un sistema de mejoramiento continuo, el cual incluye :
                   </p>
-                  <ul>
+                  <ul class="modal-info">
                     <li>
                       Registro de actividades de manejo a nivel de unidades de producción
                     </li>
@@ -731,27 +742,28 @@
                     <li>
                       Evaluación de respuesta al manejo a través de la generación de índices claves de desempeño (KPI) tanto en términos de producción como ambiental, que permitan optimizar la eficiencia de producción y sustentabilidad del huerto.
                     </li>
-                    <p>
-                      Imagen del levantamiento aéreo de alta resolución de áreas plantadas e identificación de hileras de plantación
-                    </p>
-                    <img src="./img/portfolio/Huerto/Imagen1.jpg" alt="">
-                    <p>
-                      Imagen de la definición de cobertura de copa potencial por hilera de plantación
-                    </p>
-                    <img src="./img/portfolio/Huerto/Imagen2.jpg" alt="">
-                    <p>
-                      Imagen de la cobertura de copa real v/s potencial por hilera de plantación
-                    </p>
-                    <img src="./img/portfolio/Huerto/Imagen3.jpg" alt="">
-                    <p>
-                      Imagen de la clasificación de cobertura de copa real según  su tamaño, entre estas 4 categorías:
-                    </p>
-                    <img src="./img/portfolio/Huerto/Imagen4.jpg" alt="">
-                    <p>
-                      Se seleccionan árboles que representen la clase de tamaño de copa, a los cuales se les instala sensores para implementar un sistema de mejoramiento continuo 
-                    </p>
-                    <img src="./img/portfolio/Huerto/Imagen5.jpg" alt="">
                   </ul>
+                  <br>
+                  <p>
+                    Imagen del levantamiento aéreo de alta resolución de áreas plantadas e identificación de hileras de plantación
+                  </p>
+                  <img src="./img/portfolio/Huerto/Imagen1.jpg" alt="" style="max-width: 100%;">
+                  <p>
+                    Imagen de la definición de cobertura de copa potencial por hilera de plantación
+                  </p>
+                  <img src="./img/portfolio/Huerto/Imagen2.jpg" alt="" style="max-width: 100%;">
+                  <p>
+                    Imagen de la cobertura de copa real v/s potencial por hilera de plantación
+                  </p>
+                  <img src="./img/portfolio/Huerto/Imagen3.jpg" alt="" style="max-width: 100%;">
+                  <p>
+                    Imagen de la clasificación de cobertura de copa real según  su tamaño, entre estas 4 categorías:
+                  </p>
+                  <img src="./img/portfolio/Huerto/Imagen4.jpg" alt="" style="max-width: 100%;">
+                  <p>
+                    Se seleccionan árboles que representen la clase de tamaño de copa, a los cuales se les instala sensores para implementar un sistema de mejoramiento continuo 
+                  </p>
+                  <img src="./img/portfolio/Huerto/Imagen5.jpg" alt="" style="max-width: 100%;">
                   <ul class="list-inline">
                     <li>
                       Link: 
@@ -942,5 +954,31 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/agency.min.js"></script>
+    <script>
+      let carruselIndex = 0; 
+      let imagenes = [
+        "img/portfolio/áQh/carrusel1.jpg",
+        "img/portfolio/áQh/carrusel2.jpg",
+        "img/portfolio/áQh/carrusel3.jpg"
+      ];
+      let texto = [
+        "Araucaria / Fundación Malalcahuello, <br> Malalcahuello, Región de la Araucanía.",
+        "Araucaria / Escuela Alejo Tascón, <br> Malalcahuello, Región de la Araucanía.",
+        "Damasco / Colegio Trewhela’s, <br> Santiago, Región Metropolitana."
+      ];
+      let carruselImg = document.getElementById("carrusel-img");
+      let carruselText = document.getElementById("carrusel-text");
+      function CarruselJs(accion) {
+        carruselIndex += accion;
+        if (carruselIndex === 3){
+          carruselIndex = 0;
+        } else if (carruselIndex === -1){
+          carruselIndex = 2;
+        }
+        carruselImg.src = imagenes[carruselIndex]
+        carruselText.innerHTML = texto[carruselIndex]
+        console.log(carruselIndex);
+      }
+    </script>
   </body>
 </html>
