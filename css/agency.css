@@ -206,8 +206,15 @@ header.masthead .intro-text .intro-heading {
 }
 
 header .hero-title{
-  margin: -200px auto 75px;
-  position: relative;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   z-index: 2;
 }
 
@@ -231,7 +238,6 @@ header .hero-title{
     font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   }
   header .hero-title{
-    margin: -400px auto 200px;
     font-size: 1.5rem;
   }
   header .hero-title h1{
@@ -251,9 +257,6 @@ header .hero-title{
   }
 }
 @media (min-width: 1024px){
-  header .hero-title{
-    margin: -500px auto 250px;
-  }
   header .hero-title h1{
     font-size: 7.5rem;
   }
@@ -264,25 +267,12 @@ header .hero-title{
     grid-template-rows: 130px 100px 200px;
   }
 }
-@media (min-width: 1024px){
-  header .hero-title{
-    margin: -550px auto 250px;
-  }
-}
 @media (min-width: 1440px){
   header.masthead .intro-text {
     width: 75%;
   }
-  header .hero-title{
-    margin: -600px auto 250px;
-  }
   header .hero-title h1{
     font-size: 10rem;
-  }
-}
-@media (min-width: 1920px){
-  header .hero-title{
-    margin: -550px auto 250px;
   }
 }
 @media (min-width: 1200px){
