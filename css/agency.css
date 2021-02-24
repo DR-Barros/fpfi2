@@ -269,6 +269,22 @@ header .hero-title{
     margin: -550px auto 250px;
   }
 }
+@media (min-width: 1440px){
+  header.masthead .intro-text {
+    width: 75%;
+  }
+  header .hero-title{
+    margin: -600px auto 250px;
+  }
+  header .hero-title h1{
+    font-size: 10rem;
+  }
+}
+@media (min-width: 1920px){
+  header .hero-title{
+    margin: -550px auto 250px;
+  }
+}
 @media (min-width: 1200px){
   .service-info{
     grid-template-rows: 130px 100px 150px;
