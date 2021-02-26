@@ -373,7 +373,35 @@ header .hero-title{
 .modal-info{
   text-align: justify;
 }
+.powerbi{
+  position: relative;
+  left: -30px;
+  width: 285px;
+  height: 280px;
+}
 
+@media (min-width: 480px) {
+  .powerbi{
+    width: 350px;
+    height: 440px;
+  }
+}
+@media (min-width: 767px) {
+  #portfolio .portfolio-item {
+    margin: 0 0 30px;
+  }
+  .powerbi{
+    width: 710px;
+    height: 500px;
+  }
+}
+@media (min-width: 1024px) {
+  .powerbi{
+    left: -200px;
+    width: 980px;
+    height: 700px;
+  }
+}
 @media (min-width: 1400px) {
   .container{
     max-width: 1360px;
@@ -392,15 +420,20 @@ header .hero-title{
   .modal-text_style p{
     margin-right: 5px;
   }
+  .powerbi{
+    left: -100px;
+    width: 1360px;
+    height: 900px;
+  }
 }
 @media (min-width: 1920px) {
   .container{
     max-width: 1850px;
   }
-}
-@media (min-width: 767px) {
-  #portfolio .portfolio-item {
-    margin: 0 0 30px;
+  .powerbi{
+    left: -140px;
+    width: 1200px;
+    height: 1880px;
   }
 }
 
