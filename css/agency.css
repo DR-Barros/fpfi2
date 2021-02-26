@@ -376,13 +376,14 @@ header .hero-title{
 .powerbi{
   position: relative;
   left: -30px;
-  width: 285px;
+  right: -30px;
+  width: 89vw;
   height: 280px;
 }
 
 @media (min-width: 480px) {
   .powerbi{
-    width: 350px;
+    width: 92vw;
     height: 440px;
   }
 }
